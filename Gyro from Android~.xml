@@ -1,0 +1,205 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.dtd" >
+   <PATCH nodename="C:\Users\Box Of Imagination\Documents\vr vvvv\Gyro from Android.v4p" scrollx="0" scrolly="0" systemname="Gyro from Android" filename="C:\Users\Box Of Imagination\Documents\CardBoard-VR\Android-Rot-Acc\Gyro from Android.v4p">
+   <BOUNDS type="Window" left="3570" top="3885" width="7725" height="13680">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="99" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="240" top="3750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="240" top="3750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Rotation Vector Transform|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="111" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1725" top="330" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1725" top="330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4444">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Local Port|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="114" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="195" top="2085" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="195" top="2085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Yaw offset|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="133" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3255" top="1080" width="585" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3255" top="1080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connected">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="146">
+   <BOUNDS type="Node" left="2190" top="3225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|Rotation Vector Transform|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="4965" top="195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frames per second" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="149" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4965" top="585" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4965" top="585" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="148" srcpinname="frames per second" dstnodeid="149" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="151" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1710" top="1200" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="1200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ondata">
+   </PIN>
+   </NODE>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="155">
+   <BOUNDS type="Node" left="1215" top="3195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X" slicecount="1" visible="1" values="0.15">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" visible="1" values="0.16">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="155" srcpinname="Transform Out" dstnodeid="146" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Transform Out" dstnodeid="99" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="156" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2970" top="2070" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2970" top="2070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|pitch offset|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Y Output Value" dstnodeid="155" dstpinname="Z">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="157" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1650" top="2070" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="2070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Roll offset|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="155" dstpinname="X">
+   </LINK>
+   <NODE systemname="hyperimu-server" filename="..\..\vr vvvv\hyperimu-server.v4p" nodename="..\..\vr vvvv\hyperimu-server.v4p" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="1152" top="793" width="1725" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="45" top="120" width="5530" height="7555">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3375" top="1530" width="14550" height="10890">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Local Port" visible="1">
+   </PIN>
+   <PIN pinname="Linear Accelleration" visible="1">
+   </PIN>
+   <PIN pinname="Rotation Vector" visible="1">
+   </PIN>
+   <PIN pinname="Connected" visible="1">
+   </PIN>
+   <PIN pinname="ondata" visible="1">
+   </PIN>
+   <PIN pinname="Start/Stop Streaming" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="111" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Local Port">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Connected" dstnodeid="133" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="ondata" dstnodeid="151" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="orientation" filename="orientation.v4p" nodename="orientation.v4p" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="180" top="2640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10860" top="1200" width="6780" height="8160">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Yaw offset">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Transform Out" dstnodeid="155" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Rotation Vector" dstnodeid="160" dstpinname="Input">
+   </LINK>
+   </PATCH>
