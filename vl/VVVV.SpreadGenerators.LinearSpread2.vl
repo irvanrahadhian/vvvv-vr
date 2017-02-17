@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.47">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.SpreadGenerators">
+      <!--
+
+    ************************ LinearSpread2 ************************
+
+-->
+      <Node Bounds="153,200" Id="TSttkfeJHQSN5gkEF54G9o">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="CzjSvRY5dvXQDxmAOA8mZj" Name="LinearSpread2">
+          <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" />
+          <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update">
+            <Pin Id="Myz4ZMFFQuAO1LG5iOx1WK" Name="Offset" Kind="InputPin" Bounds="227,308">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VoukKQsMKd3PjVn29dBK2g" Name="Width" Kind="InputPin" Bounds="550,268" DefaultValue="-0.25">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QbDVunZGmqCPhEAT7A50sQ" Name="Spread Count" Kind="InputPin" Bounds="471,263" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QoDNtDg2QNzNOzJ5mBh9QY" Name="Result" Kind="OutputPin" Bounds="353,519" />
+          </Patch>
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" Position="153,200">
+            <Node Bounds="319,292,40,13" Id="Mqesn4lqGKKPgaoJzcNkgd">
+              <p:NodeReference LastCategoryFullName="Collections.SpreadGenerators" LastSymbolSource="VL.CoreLib.dll" LastPackageId="VL.CoreLib">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Repeat" />
+                <CategoryReference Kind="Category" Name="SpreadGenerators" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Collections" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="OwkGyC4eO2mMhcI4WY96wi" Name="Element" Kind="InputPin" />
+              <Pin Id="IwtcHnZEA93PTmPSquI1C2" Name="Count" Kind="InputPin" />
+              <Pin Id="UM2NwXQgUWCLi7PY98jMlm" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LfAZlubGHCtLH4nbbrsrda" Bounds="257,221" />
+            <ControlPoint Id="Mx6EDI5VOBoPaeYhh1cExr" Bounds="373,222" />
+            <ControlPoint Id="MXCqapXW8yXODBd2G7J65m" Bounds="454,225" />
+            <Node Bounds="306,357,98,105" Id="NNk3HeOtNyCPjPKsb2hNis">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                <Choice Kind="2161727855497576448" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="U9Kv568nvSgOWZBqEFUsVe" Name="Break" Kind="OutputPin" />
+              <Patch Id="KobEWsi4jWLMeawgv9Xl86">
+                <Patch Id="IlwooAOayajNtr3jdYGegq" Name="Create" />
+                <Patch Id="A01pYPDMAkeMD4SHflstlb" Name="Update">
+                  <Pin Id="B0qaQyaZmpuMQdvT6TD3Oz" Name="Index" Kind="InputPin" Bounds="344,359" />
+                </Patch>
+                <Patch Id="JiCVylSNV1CPmhy0J2ZpAs" Name="Destroy" />
+                <Node Bounds="331,417,25,13" Id="VxHpWXpTXP1OMArpjC8jso">
+                  <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                    <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Fobk0t3EvouPV6qgGlw67S" Name="Input" Kind="InputPin" />
+                  <Pin Id="QAoxva0y14vNkTfxubhETi" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="SpO0g6At7xqLf9am5U0779" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="368,386,25,13" Id="SCt2eNkLyTgMMpesnyrG8r">
+                  <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="*" />
+                    <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="E3JTbUcFoNqLnFlYNGNvJR" Name="Input" Kind="InputPin" />
+                  <Pin Id="TPzO2JXriNgNF3gAAmSlG1" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="DuCmUAwjSM2OR86QYwh0XC" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="UEXg5UzuKffPd12MuEujrY" Bounds="321,363" Alignment="Top" />
+              <ControlPoint Id="JMzSx0ugKSoMI5BNR8AbSH" Bounds="335,456" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="QuVU5i3IjrfNK1A9bUvK1t" Bounds="353,519" />
+          </Canvas>
+          <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
+            <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
+            <Fragment Id="PulIQZQ5YLtPp6C2yvbTNE" Patch="OkqGvJfa3PDOppp4PFQghD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="Op2snZOvJQ7Phbd5lQlzkv" Ids="Myz4ZMFFQuAO1LG5iOx1WK,LfAZlubGHCtLH4nbbrsrda" IsHidden="true" />
+          <Link Id="FQ4lDzl82EqL6Uv8xLDT9q" Ids="VoukKQsMKd3PjVn29dBK2g,Mx6EDI5VOBoPaeYhh1cExr" IsHidden="true" />
+          <Link Id="SMdz21Rr1muOUmNk49bp4k" Ids="QbDVunZGmqCPhEAT7A50sQ,MXCqapXW8yXODBd2G7J65m" IsHidden="true" />
+          <Link Id="QgnrLnqVT8iOJmusQoVJ82" Ids="MXCqapXW8yXODBd2G7J65m,IwtcHnZEA93PTmPSquI1C2" />
+          <Link Id="BZytNSQ54fmPAPwBb4tQGK" Ids="UM2NwXQgUWCLi7PY98jMlm,UEXg5UzuKffPd12MuEujrY" />
+          <Link Id="OrzJFkV6iUgLFixqfd9sRm" Ids="UEXg5UzuKffPd12MuEujrY,Fobk0t3EvouPV6qgGlw67S" />
+          <Link Id="J9lYetYReYvPirGLweSeBJ" Ids="QuVU5i3IjrfNK1A9bUvK1t,QoDNtDg2QNzNOzJ5mBh9QY" IsHidden="true" />
+          <Link Id="MIjIYOSLZ5JN1WTygcIVqn" Ids="SpO0g6At7xqLf9am5U0779,JMzSx0ugKSoMI5BNR8AbSH" />
+          <Link Id="GRQmqmJg3Q0PXYA3Tz9ssb" Ids="JMzSx0ugKSoMI5BNR8AbSH,QuVU5i3IjrfNK1A9bUvK1t" />
+          <Link Id="H73y9vX3bPkMn1dGYPQ3eC" Ids="LfAZlubGHCtLH4nbbrsrda,OwkGyC4eO2mMhcI4WY96wi" />
+          <Link Id="M8zIeZhJl79PjhvnEOyZ5V" Ids="Mx6EDI5VOBoPaeYhh1cExr,TPzO2JXriNgNF3gAAmSlG1" />
+          <Link Id="QFfIa5EHiRzPDoh3C3EtU3" Ids="B0qaQyaZmpuMQdvT6TD3Oz,E3JTbUcFoNqLnFlYNGNvJR" />
+          <Link Id="EQa3ILDzRZ9OoBAJIjiFF1" Ids="DuCmUAwjSM2OR86QYwh0XC,QAoxva0y14vNkTfxubhETi" />
+          <p:Info Summary="Basic stateful template with one in/out" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <p:Info Authors="vvvv group">
+    <p:LicenseUrl>https://www.gnu.org/licenses/lgpl.html</p:LicenseUrl>
+    <p:ProjectUrl>http://vvvv.org/</p:ProjectUrl>
+  </p:Info>
+</Document>

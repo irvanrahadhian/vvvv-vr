@@ -117,6 +117,8 @@
    </PIN>
    <PIN pinname="Pattern" slicecount="32" values="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE id="10" systemname="ConnectAll (3d Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\ConnectAll.dll" nodename="ConnectAll (3d Vector)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Output XYZ" visible="1" pintype="Output">

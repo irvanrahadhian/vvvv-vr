@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.dtd" >
-   <PATCH nodename="C:\Users\Box Of Imagination\Documents\vr vvvv\orientation.v4p" systemname="orientation" filename="C:\Users\Bill Gates\Dropbox\VVVVExps\experiments2014\hyperimu\orientation.v4p" scrollx="0" scrolly="1920">
+   <PATCH nodename="C:\Users\Box Of Imagination\Documents\vr vvvv\orientation.v4p" systemname="orientation" filename="C:\Users\Bill Gates\Dropbox\VVVVExps\experiments2014\hyperimu\orientation.v4p" scrollx="0" scrolly="480">
    <NODE systemname="Rotate (Quaternion Vector)" nodename="Rotate (Quaternion Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="885" top="5190" width="100" height="100">
    </BOUNDS>
